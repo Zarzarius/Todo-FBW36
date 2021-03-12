@@ -45,8 +45,8 @@ export default function Todo({
       >
         {title}
       </span>
-      <button onClick={() => setIsEditing(true)}><RiEdit2Fill /></button>
-      <button
+      <button className="edit-btn" onClick={() => setIsEditing(true)}><RiEdit2Fill /></button>
+      <button className="delete-btn"
         type="button"
         onClick={() => dispatch({ type: REMOVE_TODO, payload: { id } })}
       >

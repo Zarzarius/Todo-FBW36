@@ -94,6 +94,8 @@ form select:focus{
 }
 
 .todo {
+  position:relative;
+  min-width: 260px;
   padding: 4rem;
   margin-top: 2rem;
   padding: 0.5rem;
@@ -102,6 +104,17 @@ form select:focus{
   border-radius: 1rem;
 }
 
+.delete-btn {
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+}
+
+.edit-btn{
+  font-size: 20px;
+  position: absolute;
+  right: 25px;
+}
 .is-complete {
   text-decoration: line-through;
 }
